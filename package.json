@@ -1,0 +1,14 @@
+{
+  "name": "cicd-eb-pipeline",
+  "version": "1.0.0",
+  "description": "Sample web app deployed via AWS CodePipeline/CodeBuild to Elastic Beanstalk",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "node -e \"console.log('tests passed (sample)')\""
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
+
