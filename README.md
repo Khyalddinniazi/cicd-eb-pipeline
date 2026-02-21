@@ -32,8 +32,23 @@ Users → GitHub → AWS CodePipeline → AWS CodeBuild → Manual Approval → 
 4. (Optional) Manual approval gate requires confirmation
 5. Elastic Beanstalk deploys the updated application version
 
-## Local Run
-```bash
-npm install
-npm start
-# open http://localhost:8080
+## Screenshots
+
+### Pipeline Overview
+![Pipeline Overview](screenshots/01-pipeline-overview.png)
+
+### CodeBuild Success
+![Build Success](screenshots/02-codebuild-success.png)
+
+### Manual Approval Stage
+![Manual Approval](screenshots/03-manual-approval.png)
+
+### Deployment Success
+![Deploy Success](screenshots/04-deploy-success.png)
+
+### Elastic Beanstalk Environment
+![EB Environment](screenshots/05-eb-environment.png)
+
+### Live Application
+![Live App](screenshots/06-live-application.png)
+

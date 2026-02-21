@@ -1,0 +1,27 @@
+# CI/CD Project Notes
+
+## Project Goal
+Build a continuous delivery pipeline that automatically deploys a Node.js application to AWS Elastic Beanstalk when code is pushed to GitHub.
+
+## Architecture
+GitHub → AWS CodePipeline → AWS CodeBuild → Manual Approval → AWS Elastic Beanstalk
+
+## Key AWS Services Used
+- AWS CodePipeline (orchestration)
+- AWS CodeBuild (build & test automation)
+- AWS Elastic Beanstalk (application hosting)
+- IAM (service role permissions)
+- S3 (artifact storage)
+
+## Implementation Steps
+1. Created Node.js sample application.
+2. Added buildspec.yml for automated builds.
+3. Configured CodePipeline with GitHub source.
+4. Connected CodeBuild project.
+5. Added Manual Approval stage.
+6. Configured Elastic Beanstalk deploy stage.
+7. Fixed IAM permission issue for CreateApplicationVersion.
+
+## Challenges Faced
+- IAM permission error: elasticbeanstalk:CreateApplicationVersion missing.
+- Resolved by attaching Elastic Beanstalk permissions to CodePipeline role.
